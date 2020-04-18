@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Indocaribbeanworld</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <form action="https://getsimpleform.com/messages?form_api_token=fc9c4c22fe652ca4532df1702db550b6" method="post">
+      <input type='hidden' name='redirect_to' value='http://indocaribbeanworld.com/' />
+      <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+      <!-- all your input fields here.... -->
+      <h3>Enter your email to join our newsletter:
+        <input type='text' name='Email subscriber' />
+        <input type='submit' value='Submit email to newsletter' />
+      </h3>
+
+    </form>
+    <div align="center" style="width: 100%; color: red; background-color: white; border: 0px; padding: 0px;">
+     <p style= style="font: color: red;"> | <a href="../welcome/archives" target="">archives</a> | <a href="../welcome/contactUs">contact us </a>| </p>
+
+    </div>
+    <%= yield %>
+  </body>
+</html>
